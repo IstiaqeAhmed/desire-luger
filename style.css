@@ -36,7 +36,8 @@ img {
   cursor: pointer;
 }
 
-.prev, .next {
+.prev,
+.next {
   background-color: transparent;
   padding: 8px 10px;
   color: #fff;
@@ -57,10 +58,45 @@ img {
 
 @media (max-width: 767px) {
   .justify-content-around.align-items-center.mt-3.gallery-header.mb-2 {
-    flex-direction: column;
+      flex-direction: column;
   }
   #sliders {
-    height: 300px;
-    width: 90%;
+      height: 300px;
+      width: 90%;
+  }
+}
+#loading-images{
+display: flex;
+justify-content: center;
+width: 100%;
+}
+svg {
+  display:block;
+  width:258px;
+  height:258px;
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+}
+
+.tree {
+  fill: green;
+}
+
+.circle-mask {
+  transform-origin: 50% 90%;
+  animation: scale 1s infinite ease-out;
+}
+
+@keyframes scale {
+  0%, 100% {
+    transform: scale(0.0);
+  }
+  7%, 90% {
+    transform: scale(0.4);
+  }
+  50% {
+    transform: scale(1);
   }
 }
