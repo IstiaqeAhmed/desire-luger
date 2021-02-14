@@ -1,4 +1,4 @@
 # desire-luger
-# search problem : TypeError: Cannot read property 'forEach' of undefined
-    at showImages (app.js:22)
-    at app.js:34
+# error solved
+# Bonus part: 1. add Pre-Loader 2. add Backward Button
+# git-hub code Link: https://github.com/IstiaqeAhmed/desire-luger
